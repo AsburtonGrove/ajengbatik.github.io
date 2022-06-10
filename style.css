@@ -220,3 +220,143 @@ small {
     color: #555;
     font-size: 16px;
 }
+
+/* footer */
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p {
+    color: #8a8a8a;
+}
+
+.footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 {
+    flex-basis: 30%;
+}
+
+.footer-col-2 {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 .logo {
+    width: 180px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.footer-col-3, .footer-col-4 {
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+.app-logo img {
+    width: 80px;
+    margin-left: 30px;
+}
+
+.footer hr {
+    border: none;
+    background : #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.footer-col-4 ul li a, .footer-col-3 ul li a {
+    text-decoration: none;
+    color: #8a8a8a;
+    transition: 0.5s;
+}
+
+.footer-col-4 ul li a:hover {
+    color: lightgreen;
+}
+
+.footer-col-3 ul li a:hover {
+    color: lightgreen;
+}
+
+
+/* media query untuk menu */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* media query for less than 600 screen size  */
+
+@media only screen and (max-width: 600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+    }
+    .col-2 img {
+        max-width: 100%;
+        padding: 50px 40px;
+        height: 600px;
+        margin-left: 5px;
+    }
+    .footer-col-2 .logo {
+        width: 180px;
+        margin-bottom: 20px;
+        margin-left: 85px;
+    }
+}
